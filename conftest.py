@@ -16,7 +16,7 @@ def pages(request):
 
 
 def pytest_addoption(parser):
-    parser.addoption("--testing-stand", action="store", default="TEST", help="stand option: DEV or TEST")
+    parser.addoption("--testing-stand", action="store", default="DEV", help="stand option: DEV or TEST")
 
 
 @pytest.fixture()
