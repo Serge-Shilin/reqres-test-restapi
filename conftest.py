@@ -29,4 +29,4 @@ def host(cmdopt):
     if cmdopt == "DEV":
         return 'https://reqres.in'
     elif cmdopt == "TEST":
-        return 'localhost'
+        return 'https://localhost'
