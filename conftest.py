@@ -21,7 +21,7 @@ def user_ids(request):
 
 
 def pytest_addoption(parser):
-    parser.addoption("--testing-stand", action="store", default="TEST", help="stand option: DEV or TEST")
+    parser.addoption("--testing-stand", action="store", default="DEV", help="stand option: DEV or TEST")
 
 
 @pytest.fixture()
@@ -34,4 +34,4 @@ def host(cmdopt):
     if cmdopt == "DEV":
         return 'https://reqres.in'
     elif cmdopt == "TEST":
-        return 'localhost'
+        return 'https://localhost'
