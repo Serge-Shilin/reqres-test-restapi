@@ -15,6 +15,11 @@ def pages(request):
     return request.param
 
 
+@pytest.fixture(params=[1,2,3,4], ids=idfn)
+def user_ids(request):
+    return request.param
+
+
 def pytest_addoption(parser):
     parser.addoption("--testing-stand", action="store", default="TEST", help="stand option: DEV or TEST")
 

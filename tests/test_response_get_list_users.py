@@ -7,7 +7,7 @@ from core.tools import get_list_users, OK
 
 class TestResponseGetListUsers:
 
-    @allure.feature("Вывод списка пользователей")
+    @allure.feature("Вывод пользователей")
     def test_response_get_list_users(self, host, pages):
         """
         Нужно сделать matcher чтобы была только одна проверка
